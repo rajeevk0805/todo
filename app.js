@@ -52,6 +52,7 @@ function createTodo() {
     btncontainer.appendChild(delBtn);
     delBtn.addEventListener("click", () => {
       delTodo(item);
+      input.value = "";
       saveToLocal();
     });
 
