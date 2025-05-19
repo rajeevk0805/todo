@@ -89,7 +89,6 @@ function saveToLocal() {
 document.addEventListener("DOMContentLoaded", () => {
   todoList = JSON.parse(localStorage.getItem("todos"));
   if (todoList) {
-    // todoContainer.innerHTML = "";
     todoList.forEach((item, index) => {
       createTodo();
     });
